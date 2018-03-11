@@ -3,7 +3,7 @@
 for i in *.JPG; do mv -i ${i} ${i%}.jpg; done
 ```
 
-#### Bulk resizing of images (from here):
+#### Bulk resizing of images (from [here](https://www.garron.me/en/bits/resize-lower-quality-pictures-for-web-publishing-imagemagick-batch.html)):
 ##### Replace originals:
 ```
 find . -name "*.jpg" -exec convert -resize 900x -quality 85% {} {} \;
